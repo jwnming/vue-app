@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="Allow-Control-Allow-Origin" content="*">  <!-- 跨源读取阻止(CORB)功能阻止了 MIME 类型为 text/html 的跨源响应 -->
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+  <!-- 导入iconfont,阿里，方式一：Symbol // 其他样式修改，参考官网
+      使用： <script src="//at.alicdn.com/t/font_3028419_uc13f2xqxpt.js"></script> 
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-sousuo"></use>
+             </svg>
+    -->
+  <!-- 导入iconfont,阿里，方式二：css  // 其他样式修改，参考官网
+      使用：<span class="iconfont icon-search"></span>
+    -->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_3028419_n44jrbwoju.css">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+
+
+  <!-- 引入rem自适应，加载外body后处理 -->
+  <script src="./js/rem.js"></script>
+</body>
+
+</html>
